@@ -1,0 +1,261 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #222;
+    color: #fff;
+}
+
+.top-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.top-header img {
+    height: 50px;
+}
+
+.shop-name {
+    flex: 1;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.search-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.navigation {
+    width: 100%;
+    background-color: #444;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.navigation li {
+    margin: 0 15px;
+}
+
+.navigation a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.hero-container {
+    width: 100%;
+    max-width: 100%; /* Ensures full-width of the screen */
+    margin: 0 auto; /* Centers the container (though it's full width) */
+    padding: 0; /* Removes padding */
+}
+
+.hero-image img {
+    width: 100%; /* Makes the image expand across the full width of the container */
+    height: 300px;
+}
+.intro-heading {
+    text-align: center;
+    font-size: 2rem;
+    margin: 20px 0;
+    color: #444;
+}
+
+.about-section {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-section ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.three-column-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+}
+
+.three-column-section h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.three-column-section img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.three-column-section p {
+    text-align: center;
+    max-width: 200px;
+    margin: 10px auto 0;
+    color: #666;
+}
+
+.three-column {
+    flex: 1;
+    margin: 0 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+.footer-image {
+    display: flex;
+    justify-content: left; /* Centers the image horizontally */
+    width: 100%;
+    padding: 10px; /* Optional, adjust the space around the logo */
+}
+
+.footer-image img {
+    width: 100px; /* Adjust the width to make it smaller */
+    height: auto; /* Keeps the aspect ratio intact */
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-media {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 0.8em;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .top-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .navigation li {
+        margin: 10px 0;
+    }
+
+    .hero-image {
+        height: 200px;
+    }
+
+    .intro-heading {
+        font-size: 1.8rem;
+    }
+
+    .about-section {
+        padding: 15px;
+        margin: 20px;
+    }
+
+    .three-column-section {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .three-column {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .three-column-section img {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-media {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Extra Small Devices (Mobile Phones) */
+@media (max-width: 480px) {
+    .shop-name {
+        font-size: 1.5rem;
+    }
+
+    .navigation a {
+        font-size: 0.9rem;
+    }
+
+    .intro-heading {
+        font-size: 1.5rem;
+    }
+
+    .about-section ul {
+        padding-left: 15px;
+    }
+
+    .three-column-section h3 {
+        font-size: 1.3rem;
+    }
+
+    .footer-links {
+        gap: 5px;
+    }
+
+    .footer-content {
+        padding: 5px;
+    }
+
+    footer p {
+        font-size: 0.7em;
+    }
+}

@@ -1,0 +1,239 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #222;
+    color: #fff;
+}
+
+.top-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.top-header img {
+    height: 50px;
+}
+
+.shop-name {
+    flex: 1;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.search-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.navigation {
+    width: 100%;
+    background-color: #444;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.navigation li {
+    margin: 0 15px;
+}
+
+.navigation a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Main */
+#visit-us {
+    padding: 20px;
+}
+
+#visit-us h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.branch {
+    margin-bottom: 40px;
+}
+
+.branch-info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.branch-info h3 {
+    font-size: 1.8rem;
+    margin-right: 20px;
+}
+
+.branch-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.branch-image {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.branch-description {
+    font-size: 1rem;
+    max-width: 600px;
+}
+
+.branch-map {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.branch-map iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+}
+
+/* Table */
+.summary table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.summary table th, .summary table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.footer-image {
+    display: flex;
+    justify-content: left; /* Centers the image horizontally */
+    width: 100%;
+    padding: 10px; /* Optional, adjust the space around the logo */
+}
+
+.footer-image img {
+    width: 100px; /* Adjust the width to make it smaller */
+    height: auto; /* Keeps the aspect ratio intact */
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-media {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 0.8em;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .top-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .navigation li {
+        margin: 10px 0;
+    }
+
+    .branch-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .branch-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .branch-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .branch-description {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .branch-map iframe {
+        width: 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links {
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .shop-name {
+        font-size: 1.5rem;
+    }
+
+    .branch-description {
+        font-size: 0.9rem;
+    }
+
+    footer p {
+        font-size: 0.7em;
+    }
+}

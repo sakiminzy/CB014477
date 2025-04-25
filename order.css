@@ -1,0 +1,294 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #222;
+    color: #fff;
+}
+
+.top-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.top-header img {
+    height: 50px;
+}
+
+.shop-name {
+    flex: 1;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.search-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.navigation {
+    width: 100%;
+    background-color: #444;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.navigation li {
+    margin: 0 15px;
+}
+
+.navigation a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.hero-container {
+    width: 100%;
+    max-width: 100%; /* Ensures full-width of the screen */
+    margin: 0 auto; /* Centers the container (though it's full width) */
+    padding: 0; /* Removes padding */
+}
+
+.hero-image img {
+    width: 100%; /* Makes the image expand across the full width of the container */
+    height: 300px;
+}
+/* General Styles */
+body {
+    background-color: #444547;
+    padding-bottom: 2rem;
+}
+
+.container-fluid {
+    max-width: 1400px;
+    padding: 0 2rem;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+/* Product Card Styles */
+.product-card {
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-card .card-img-top {
+    height: 200px;
+    object-fit: contain;
+    padding: 1rem;
+    background-color: #ffffff;
+}
+
+.product-card .card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card .card-text {
+    flex-grow: 1;
+}
+
+.product-card .quantity-input {
+    width: 80px;
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+/* Cart Table Styles */
+.table {
+    background-color: rgb(49, 211, 16);
+    margin-bottom: 0;
+}
+
+.table th {
+    background-color: #cb1679;
+}
+
+/* Button Styles */
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn-add-to-cart {
+    width: 100%;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container-fluid {
+        padding: 0 1rem;
+    }
+    
+    .btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    .product-card .card-img-top {
+        height: 150px;
+    }
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+.footer-image {
+    display: flex;
+    justify-content: left; /* Centers the image horizontally */
+    width: 100%;
+    padding: 10px; /* Optional, adjust the space around the logo */
+}
+
+.footer-image img {
+    width: 100px; /* Adjust the width to make it smaller */
+    height: auto; /* Keeps the aspect ratio intact */
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-media {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 0.8em;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .top-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .navigation li {
+        margin: 10px 0;
+    }
+
+    .hero-image {
+        height: 200px;
+    }
+
+    .intro-heading {
+        font-size: 1.8rem;
+    }
+
+    .about-section {
+        padding: 15px;
+        margin: 20px;
+    }
+
+    .three-column-section {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .three-column {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .three-column-section img {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-media {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Extra Small Devices (Mobile Phones) */
+@media (max-width: 480px) {
+    .shop-name {
+        font-size: 1.5rem;
+    }
+
+    .navigation a {
+        font-size: 0.9rem;
+    }
+
+    .intro-heading {
+        font-size: 1.5rem;
+    }
+
+    .about-section ul {
+        padding-left: 15px;
+    }
+
+    .three-column-section h3 {
+        font-size: 1.3rem;
+    }
+
+    .footer-links {
+        gap: 5px;
+    }
+
+    .footer-content {
+        padding: 5px;
+    }
+
+    footer p {
+        font-size: 0.7em;
+    }
+}
